@@ -4,19 +4,16 @@ public class noteTaker extends javax.swing.JFrame {
         initComponents();
     }
     
-    private void initComponents() {
-        
-        title = new javax.swing.JTextField();
+    public void initComponents() {
+
+        title = new javax.swing.JTextField("");
         scrl = new javax.swing.JScrollPane();
-        note = new javax.swing.JTextArea();
+        note = new javax.swing.JTextArea("");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        title.setText("TITLE");
-
         note.setColumns(20);
         note.setRows(5);
-        note.setText("NOTE");
         scrl.setViewportView(note);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -43,8 +40,8 @@ public class noteTaker extends javax.swing.JFrame {
         pack();
     }                                                    
                    
-    private javax.swing.JScrollPane scrl;
-    private javax.swing.JTextArea note;
-    private javax.swing.JTextField title;
+    public javax.swing.JScrollPane scrl;
+    public javax.swing.JTextArea note;
+    public javax.swing.JTextField title;
 
     }
